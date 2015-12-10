@@ -1,0 +1,98 @@
+  Id CommandLine                                                                                        
+  -- -----------                                                                                        
+   1 get-help *log*                                                                                     
+   2 get-help *event*                                                                                   
+   3 help *eventlog*                                                                                    
+   4 help get                                                                                           
+   5 help file                                                                                          
+   6 help display                                                                                       
+   7 notepad                                                                                            
+   8 ls                                                                                                 
+   9 dir                                                                                                
+  10 cd documents                                                                                       
+  11 dir                                                                                                
+  12 notepad letter.txt                                                                                 
+  13 notepad++ letter.txt                                                                               
+  14 notepad++                                                                                          
+  15 help notepad++                                                                                     
+  16 start notepad++                                                                                    
+  17 gcm help                                                                                           
+  18 gcm event                                                                                          
+  19 gcm *event*                                                                                        
+  20 gcm *eventlog*                                                                                     
+  21 help get-eventlog                                                                                  
+  22 get-eventlog                                                                                       
+  23 get-eventlog system -newest 20                                                                     
+  24 help get-eventlog full                                                                             
+  25 help get-eventlog -full                                                                            
+  26 get-eventlog system -message *fail*                                                                
+  27 Get-EventLog Application -computer (Get-Content names.txt)                                         
+  28 help get-eventlog -example                                                                         
+  29 get-eventlog -newest 5 -logname application -message *installation*                                
+  30 get-eventlog -newest 5 -logname application -message *instal fail*                                 
+  31 get-eventlog -newest 5 -logname application                                                        
+  32 help *common*                                                                                      
+  33 help about_CommonParameters                                                                        
+  34 gmc *HTML*                                                                                         
+  35 gcm *HTML*                                                                                         
+  36 gcm ConvertTo-Html                                                                                 
+  37 gcm ConvertTo-Html -verbose                                                                        
+  38 help about_CovertTo-Html                                                                           
+  39 gcm *file*                                                                                         
+  40 gcm *printer*                                                                                      
+  41 help Out-Printer                                                                                   
+  42 help Out-Printer -full                                                                             
+  43 gcm *process*                                                                                      
+  44 gcm *transcript*                                                                                   
+  45 help start-transcript                                                                              
+  46 get-eventlog services -new 100                                                                     
+  47 get-eventlog security -new 100                                                                     
+  48 gcm *services*                                                                                     
+  49 gcm *remote*                                                                                       
+  50 help get-service                                                                                   
+  51 help get-service -full                                                                             
+  52 help get-process -full                                                                             
+  53 help out-file -full                                                                                
+  54 help *alias*                                                                                       
+  55 get-alias                                                                                          
+  56 help *generic*                                                                                     
+  57 help *object*                                                                                      
+  58 get-process                                                                                        
+  59 ps                                                                                                 
+  60 get-service                                                                                        
+  61 gsv                                                                                                
+  62 get-eventlog Security 100                                                                          
+  63 start-process powershell -verb runas                                                               
+  64 get-process | export-csv procs.csv                                                                 
+  65 notepad procs.csv                                                                                  
+  66 get-process | export-clixml procs.xml                                                              
+  67 diff -reference (import-clixml procs.xml) -difference (get-process) -property name                 
+  68 help out-file                                                                                      
+  69 help out-file -full                                                                                
+  70 get-service | out-gridview                                                                         
+  71 get-service conertto-html                                                                          
+  72 get-service | convertto-html                                                                       
+  73 get-service | convertto-html |out-file services.xml                                                
+  74 get-service | export-clixml sample.xml                                                             
+  75 service bits                                                                                       
+  76 stop bits                                                                                          
+  77 stop-service bits                                                                                  
+  78 diff -reference (import-clixml procs.xml) -difference (get-process) -property name baseprioity     
+  79 help diff                                                                                          
+  80 help diff -full                                                                                    
+  81 processes_before = get-process                                                                     
+  82 $processes_before = get-process                                                                    
+  83 notepad                                                                                            
+  84 $process_after = get-process                                                                       
+  85 compare-object -referenceobject $process_before -differenceobject $process_after                   
+  86 notepad                                                                                            
+  87 diff -referenceobject test1.txt -differenceobject test2.txt                                        
+  88 diff -referenceobject test1.txt -differenceobject test2.txt                                        
+  89 compare-object -referenceobject test1.txt -differenceobject test2.txt                              
+  90 get-service | export-csv services.csv | out-file                                                   
+  91 get-service bits                                                                                   
+  92 stop-service bits                                                                                  
+  93 get-service bits | stop-service bits                                                               
+  94 help export-csv -full                                                                              
+  95 get-service | export-csv services.csv -delimiter '|'                                               
+  96 history                                                                                            
